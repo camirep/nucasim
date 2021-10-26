@@ -1,13 +1,10 @@
-
 package nucasim;
 
 
 public class Nucasim {
 
     public static void main(String[] args) {
-        System.out.println("hola este es el primer commitls");
-        System.out.println("hola este es un nuevo cambio ");
-        System.out.println("kkkk");
+        system.out.printl("Hola yuli este es el repositorio para empezar a trabajar remotamente ya esta configurado y listo")
     }
     
 }
