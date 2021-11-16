@@ -631,9 +631,11 @@ h3.profile-title {
     
     .about-image:hover:before{ 
      width: 90%;
+     transition:all .3s ease;
       }
     .about-image:hover:after {
         width: 90%;
+        transition:all .3s ease;
       }
      .about-image:hover h1,.about-image:hover p{
      transform:translateX(0%); 
