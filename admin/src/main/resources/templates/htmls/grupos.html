@@ -5,33 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
 </head>
 <body>
-    <form action="">
-        <label for="grupo">numero de grupo</label>
-        <input type="number" name="grupo" id="grupo" required><br>
+   <main>
 
-        <label for="descripcion">descripcion</label>
-        <input type="textarea" name="descripcion" id="descripcion"><br>
+    
+    <form> 
+        <div>
 
-        <label for="cursos">cursos</label>
-        <input type="text" name="curso" id="curso" placeholder="dime el curso" required><br>
-
-        <label for="fechaDeInicio">fecha De Inicio</label>
-        <input type="date" name="fechaDeInicio" id="fechaDeInicio" required>
-        <label for="fechaDeFin">fecha de Fin</label>
-        <input type="date" name="fechaDeFin" id="fechaDeFin" required><br>
-
-        <label for="valor">valor</label>
-        <input type="number" name="valor" id="valor" placeholder="valor del curso" required><br>
-
-        <label for="estado">estado</label>
-        <input type="text" name="estado" id="estado"><br>
-<br>
-        <textarea name="observaciones" placeholder="Escribe si tienes observaciones" id="observaciones"rows="10" cols="30"></textarea>
-<br>
-        <input type="submit">
-
-    </form>
+        
+        <div class="form-row">
+            <div class="col">
+                <label for="grupo">Grupo</label>
+              <input type="number" name="grupo" id="grupo"class="form-control" placeholder="numero de grupo" required>
+            </div>
+            <div class="col">
+                <label for="description">Descripcion</label>
+              <input type="text"  name="description" class="form-control" placeholder="descripcion opcional" required>
+            </div>
+            <div class="col">
+                <label for="cursos">Curso</label>
+              <input type="text" name="cursos" id="cursos" class="form-control" placeholder="curso" required>
+            </div>
+            <div class="col -7">
+            <label for="fechaInicial">fecha inicial</label>
+              <input type="date" name="fechaInicial" id="fechaInicial"class="form-control" placeholder="fecha inicial" required>
+              <label for="fechaFinal">fecha final</label>
+              <input type="date" name="fechaFinal" id="fechaFinal" class="form-control" placeholder="fecha fin.." required>
+            </div>
+            <div>
+            <label for="valor">valor</label>
+              <input type="number" class="form-control" placeholder="valor del curso" name="valor" required>
+            </div>
+            <div>
+                <label for="estado">Estado</label>
+              <input type="text" class="form-control" placeholder="estado del curso" name="estado" required>
+            </div>
+            <div class="text">
+                <label for="descripcion">descripcion</label>
+                <textarea name="descripcion" class="form-control" placeholder="descripcion opcional" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+            
+            </div>
+            
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
 </html>
