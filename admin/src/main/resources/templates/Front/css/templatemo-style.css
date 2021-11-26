@@ -580,7 +580,7 @@ h3.profile-title {
     top: 7px; 
     width: 100%; 
     height:530px; 
-    background-image:url(../img/surgery-1822458.jpg);
+    background-image:url(../img/CURSO\ BLS\ NUEVA\ EPS.jpg);
     background-size:100% 100%;
      overflow:hidden;
      color: white;
@@ -644,6 +644,5 @@ h3.profile-title {
     .about-image:hover{
      background-size: 110% 110%;
      transition:all .5s ease;
-     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/surgery-1822458.jpg);
-     
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/CURSO\ BLS\ NUEVA\ EPS.jpg);
 }
