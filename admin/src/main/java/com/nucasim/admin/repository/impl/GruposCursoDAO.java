@@ -2,11 +2,13 @@ package com.nucasim.admin.repository.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.nucasim.admin.enumeration.EstadoGrupoCurso;
 import com.nucasim.admin.model.GruposCurso;
 import com.nucasim.admin.repository.GruposCursoRepository;
 import com.nucasim.admin.repository.dao.IGruposCursoDAO;
-
+@Repository
 public class GruposCursoDAO implements IGruposCursoDAO{
 	
 private final GruposCursoRepository repository;

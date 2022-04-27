@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name="nucasim08")
+@Table(name="nucasimciaf08")
 
 public class RepositorioDoc implements Serializable{
 

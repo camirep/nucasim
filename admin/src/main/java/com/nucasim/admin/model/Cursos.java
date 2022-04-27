@@ -9,7 +9,7 @@ import com.nucasim.admin.enumeration.Estado;
 
 
 @Entity
-@Table(name="nucasim02")
+@Table(name="nucasimciaf02")
 
 public class Cursos implements Serializable{
 

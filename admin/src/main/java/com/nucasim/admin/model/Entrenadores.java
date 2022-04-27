@@ -9,7 +9,7 @@ import com.nucasim.admin.enumeration.Estado;
 
 
 @Entity
-@Table(name="nucasim04")
+@Table(name="nucasimciaf04")
 
 public class Entrenadores implements Serializable{
 

@@ -9,7 +9,7 @@ import com.nucasim.admin.enumeration.FormaPago;
 
 
 @Entity
-@Table(name="nucasim09")
+@Table(name="nucasimciaf09")
 
 public class RegistroPagos implements Serializable{
 
@@ -32,7 +32,7 @@ public class RegistroPagos implements Serializable{
 	private String nroTransaccion;
 	
 	@ManyToOne(optional=false,fetch=FetchType.EAGER)
-	@JoinColumn(name="banco")
+	@JoinColumn(name="codigo")
 	private Bancos banco;
 	
 	@Column(name="concepto", length=60, nullable=false)
@@ -42,7 +42,7 @@ public class RegistroPagos implements Serializable{
 	private int valor;
 	
 	@ManyToOne(optional=false,fetch=FetchType.EAGER)
-	@JoinColumn(name="curso")
+	@JoinColumn(name="codigo")
 	private Cursos curso;
 	
 	@ManyToOne(optional=false,fetch=FetchType.EAGER)

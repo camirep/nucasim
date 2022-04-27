@@ -9,6 +9,8 @@ public interface IEstudiantesDAO {
 	
 	List<Estudiantes> findByTipoIdentif(TipoIdentif tipoIdentificacion);
 	
+	List<Estudiantes> findAll();
+	
 	Estudiantes findByIdentificacionAndTipoIdentif(int identificacion, TipoIdentif tipoIdentificacion);
 	
 	Estudiantes saveEstudiantes(Estudiantes estudiante);

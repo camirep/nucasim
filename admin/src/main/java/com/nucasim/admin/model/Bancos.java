@@ -8,7 +8,7 @@ import javax.persistence.*;
 import com.nucasim.admin.enumeration.Estado;
 
 @Entity
-@Table(name="nucasim05")
+@Table(name="nucasimciaf05")
 
 public class Bancos implements Serializable{
 

@@ -6,7 +6,7 @@ import javax.persistence.*;
 import com.nucasim.admin.enumeration.Estado;
 
 @Entity
-@Table(name="nucasim03")
+@Table(name="nucasimciaf03")
 
 public class Profesiones implements Serializable{
 

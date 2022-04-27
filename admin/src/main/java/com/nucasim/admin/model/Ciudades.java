@@ -8,7 +8,7 @@ import javax.persistence.*;
 import com.nucasim.admin.enumeration.Estado;
 
 @Entity
-@Table(name="nucasim01")
+@Table(name="nucasimciaf01")
 
 public class Ciudades implements Serializable{
 

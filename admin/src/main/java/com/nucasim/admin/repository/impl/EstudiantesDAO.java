@@ -2,11 +2,14 @@ package com.nucasim.admin.repository.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.nucasim.admin.enumeration.TipoIdentif;
 import com.nucasim.admin.model.Estudiantes;
 import com.nucasim.admin.repository.EstudiantesRepository;
 import com.nucasim.admin.repository.dao.IEstudiantesDAO;
 
+@Repository
 public class EstudiantesDAO implements IEstudiantesDAO{
 	
 	private final EstudiantesRepository repository;
@@ -19,6 +22,11 @@ public class EstudiantesDAO implements IEstudiantesDAO{
 	@Override
 	public List<Estudiantes> findByTipoIdentif(TipoIdentif tipoIdentificacion) {
 		return repository.findByTipoIdentificacion(tipoIdentificacion);
+	}
+	
+	@Override
+	public List<Estudiantes> findAll(){
+		return repository.findAll();
 	}
 
 	@Override

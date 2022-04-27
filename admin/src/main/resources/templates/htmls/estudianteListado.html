@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="master">
+<body>
+<main layout:fragment="contenido">
+    <div class="col-12">
+        <h2>Estudiantes</h2>
+        <div th:classappend="'alert-' + (${clase != null} ? ${clase} : info)" th:if="${mensaje != null}"
+             th:text="${mensaje}"
+             class="alert">
+        </div>
+        <a class="btn btn-success mb-2" href="/estudiantes/addEstudiante">Agregar</a>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Identificación</th>
+                <th>Tipo Identificación</th>
+                <th>Lugar expedición</th>
+                <th>Nombre</th>
+                <th>Ciudad Residencia</th>
+                <th>Celular</th>
+                <th>Profesión</th>
+                <th>Institución</th>
+                <th>Email</th>
+                <th>Actualizado</th>
+                <th>Modificar</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="estudiante : ${estudiantes}">
+                <td th:text="${estudiante.identificacion}"></td>
+                <td th:text="${estudiante.tipoIdentificacion}"></td>
+                <td th:text="${estudiante.lugarExpedicion.nombre}"></td>
+                <td th:text="${estudiante.nombre}"></td>
+                <td th:text="${estudiante.ciudadResidencia.nombre}"></td>
+                <td th:text="${estudiante.celular}"></td>
+                <td th:text="${estudiante.profesion.nombre}"></td>
+                <td th:text="${estudiante.institucion}"></td>
+                <td th:text="${estudiante.email}"></td>
+                <td th:text="${estudiante.actualizado}"></td>
+                <td>
+                    <a class="btn btn-warning" th:href="@{/estudiantes/editar/} + ${estudiantes.id}">Modificar <i
+                            class="fa fa-edit"></i></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+</body>
+</html>

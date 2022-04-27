@@ -11,6 +11,8 @@ public interface EstudiantesRepository extends CrudRepository<Estudiantes, Integ
 	
 	List<Estudiantes> findByTipoIdentificacion(TipoIdentif tipoIdentificacion);
 	
+	List<Estudiantes> findAll();
+	
 	Estudiantes findByIdentificacionAndTipoIdentificacion(int identificacion, TipoIdentif tipoIdentificacion);
 	
 

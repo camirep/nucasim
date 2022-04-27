@@ -9,7 +9,7 @@ import com.nucasim.admin.enumeration.TipoIdentif;
 
 
 @Entity
-@Table(name="nucasim07")
+@Table(name="nucasimciaf07")
 
 public class Estudiantes implements Serializable{
 
@@ -37,8 +37,9 @@ public class Estudiantes implements Serializable{
 	@Column(name="celular", length=35, nullable=false)
 	private String celular;
 	
-	@Column(name="profesion", length=2, nullable=false)
-	private int profesion;
+	@ManyToOne(optional=false,fetch=FetchType.EAGER)
+	@JoinColumn(name="profesion")
+	private Profesiones profesion;
 	
 	@Column(name="institucion", length=40, nullable=false)
 	private String institucion;
@@ -51,7 +52,7 @@ public class Estudiantes implements Serializable{
 	private Date actualizado;
 
 	public Estudiantes(int identificacion, TipoIdentif tipoIdentificacion, Ciudades lugarExpedicion, String nombre,
-			Ciudades ciudadResidencia, String celular, int profesion, String institucion, String email,
+			Ciudades ciudadResidencia, String celular, Profesiones profesion, String institucion, String email,
 			Date actualizado) {
 		super();
 		this.identificacion = identificacion;
@@ -119,11 +120,11 @@ public class Estudiantes implements Serializable{
 		this.celular = celular;
 	}
 
-	public int getProfesion() {
+	public Profesiones getProfesion() {
 		return profesion;
 	}
 
-	public void setProfesion(int profesion) {
+	public void setProfesion(Profesiones profesion) {
 		this.profesion = profesion;
 	}
 

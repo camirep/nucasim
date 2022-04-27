@@ -9,7 +9,7 @@ import com.nucasim.admin.enumeration.EstadoEstudianteGrupo;
 
 
 @Entity
-@Table(name="nucasim11")
+@Table(name="nucasimciaf11")
 
 public class EstudiantesGrupo implements Serializable{
 
@@ -34,6 +34,7 @@ public class EstudiantesGrupo implements Serializable{
 	@Id
 	@Column(name="id_estudiantegrupo", length=7, nullable=false, 
 	columnDefinition="mediumint(7) unsigned zerofill")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idEstudianteGrupo;
 	
 	@Temporal(TemporalType.TIMESTAMP)

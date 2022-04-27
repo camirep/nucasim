@@ -2,11 +2,13 @@ package com.nucasim.admin.repository.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.nucasim.admin.enumeration.FormaPago;
 import com.nucasim.admin.model.RegistroPagos;
 import com.nucasim.admin.repository.RegistroPagosRepository;
 import com.nucasim.admin.repository.dao.IRegistroPagosDAO;
-
+@Repository
 public class RegistroPagosDAO implements IRegistroPagosDAO{
 	
 	private final RegistroPagosRepository repository;
