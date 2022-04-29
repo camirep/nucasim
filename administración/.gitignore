@@ -33,7 +33,4 @@ build/
 .vscode/
 
 
-*.img
 
-*.jpg
-	*.gif
